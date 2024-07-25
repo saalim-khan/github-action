@@ -1,10 +1,13 @@
 ---
 name: Hello World
+
 on:
   workflow_dispatch:
+
 jobs:
   print-hello-world:
-    runs_on: ubuntu-latest
-    steps: null
-    -name: Say Hello
-    runs: echo "hello world"
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Say hello
+        run: echo "Hello World"
