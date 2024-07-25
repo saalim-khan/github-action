@@ -1,4 +1,4 @@
-name: Shared Action Example
+name: Shared Actions Example
 
 on:
   workflow_dispatch:
@@ -8,7 +8,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: action/checkout@v2
+      - uses: actions/checkout@v2
 
       - run: ls
-        
